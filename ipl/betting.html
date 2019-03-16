@@ -1,0 +1,558 @@
+<!Doctype html>
+<html>
+<head>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+<title>home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+<style>
+.bt
+{
+float :right;
+}
+</style>   
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+      <a class="navbar-brand" href="#">CEG Canteen</a>
+    </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li><a href="#">Home</a></li>
+      
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+	<li><a href="#">logout</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+
+<p><br><br><br><br></p>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+
+        <ul class="nav nav-tabs">
+  
+        <li class="active"><a data-toggle="tab" href="#team1">Team 1</a></li>
+        <li><a data-toggle="tab" href="#team2">Team 2</a></li>
+		<li><a data-toggle="tab" href="#team3">Team 3</a></li>
+        <li><a data-toggle="tab" href="#team4">Team 4</a></li>
+        <li><a data-toggle="tab" href="#team5">Team 5</a></li>
+        <li><a data-toggle="tab" href="#team6">Team 6</a></li>
+        <li><a data-toggle="tab" href="#team7">Team 7</a></li>
+        
+		</ul>
+
+        <div class="tab-content">
+        <div id="team1" class="tab-pane fade in active">
+        
+		<div class="list-group">
+		
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Sachin
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Dhoni
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Virat
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">benet
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Tyler
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+ </div>
+        <div class="tab-content">
+        <div id="team2" class="tab-pane fade in active">
+        
+		<div class="list-group">
+		
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Sachin
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Dhoni
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Virat
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">benet
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Tyler
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+ </div>
+        <div class="tab-content">
+        <div id="team3" class="tab-pane fade in active">
+        
+		<div class="list-group">
+		
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Sachin
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Dhoni
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Virat
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">benet
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Tyler
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+ </div>
+        <div class="tab-content">
+        <div id="team4" class="tab-pane fade in active">
+        
+		<div class="list-group">
+		
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Sachin
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Dhoni
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Virat
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">benet
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Tyler
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+ </div>
+        <div class="tab-content">
+        <div id="team5" class="tab-pane fade in active">
+        
+		<div class="list-group">
+		
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Sachin
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Dhoni
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Virat
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">benet
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Tyler
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+ </div>
+        <div class="tab-content">
+		
+        <div id="team6" class="tab-pane fade in active">
+        
+		<div class="list-group">
+		
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Sachin
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Dhoni
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Virat
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">benet
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Tyler
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+ </div>
+        <div class="tab-content">
+        <div id="team7" class="tab-pane fade in active">
+        
+		<div class="list-group">
+		
+  <a href="#" class="list-group-item ">
+  
+    <h3 class="list-group-item-heading">Sachin
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Dhoni
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Virat
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">benet
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Tyler
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+ </div>
+        <div class="tab-content">
+        <div id="bf" class="tab-pane fade in active">
+        
+		<div class="list-group">
+		
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Sachin
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Dhoni
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Virat
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">benet
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+  <a href="#" class="list-group-item ">
+    <h3 class="list-group-item-heading">Tyler
+	
+	<div class="bt">
+		<input type="number" id="id3" size="1" >
+	<button type="button" class="btn btn-default btn-sm" onclick="addbet()"><span class="glyphicon glyphicon-plus"></span></button>
+	<span id="val1"> </span>
+   </div>
+   
+   </h3>
+  </a>
+ </div>
+
+
+<script src="betting.js">
+
+</script>
+</body>
+</html>

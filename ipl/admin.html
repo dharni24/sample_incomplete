@@ -1,0 +1,87 @@
+
+<!Doctype html>
+<html>
+<head>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+<title>home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+
+   
+</head>
+<body onload="yourorder()">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      
+     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+      <a class="navbar-brand" href="#">IPL Auction</a>
+    </div>
+     <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav">
+      <li><a href="student.html">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+	
+	<li><a href="indexstu.html">logout</a></li>
+    </ul>
+  </div>
+</div>
+</nav>
+<div class="container">
+<h1><br><br><br><br>IPL AUCTION</h1>
+
+<h3>Player under auction:<span id="player_det"></span> </h3>
+	<div class="row">
+	<div class="col-sm-7">
+	<table class="table table-striped" id="mytable">
+    <thead>
+      <tr>
+        <th>Team name </th>
+        <th>amount</th>
+      </tr>
+    </thead>
+   </table>
+   </div>
+   <div class="col-sm-5">
+   <p>Enter player id</p>
+   <p><input type="text" id="oid">
+   <button onclick="player_auction(document.getElementById('oid').value)">show details</button></p>
+   <p id="desc"></p>
+   </div>
+    </div>
+</div>
+<script>
+function player_auction(id_player){
+var player1 = {name:"sachin",id:"3022",type:"batsman",base_price:100000,foreign:"no"};
+var player2 = {name:"dhoni",id:"3055",type:"all_rounder",base_price:200000,foreign:"no"};
+var player3 = {name:"virat",id:"3012",type:"batsman",base_price:50000,foreign:"no"};
+var player4 = {name:"benat",id:"3023",type:"bowler",base_price:70000,foreign:"yes"};
+var player5 = {name:"tyler",id:"3051",type:"wicket keeper",base_price:80000,foreign:"yes"};
+var players = [player1,player2,player3,player4,player5];
+for(i=0;i<5;i++){
+if(players[i].id==id_player){
+document.getElementById("player_det").innerHTML = players[i].name ;
+break;
+}
+}
+var txtFile = "test.txt";
+var file = new File(txtFile);
+file.open("w"); 
+file.write(id_player);
+file.close();
+}
+
+</script>
+</body>
+</html>
